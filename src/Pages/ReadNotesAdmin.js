@@ -1,10 +1,11 @@
 import './ReadNotesAdmin.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { obj } from '../config/keys'
 
 const ReadNotesAdmin = () =>{
     let [notes, setNotes] = useState([]);
+
 
     const readNews =async () =>{
         let result = await fetch(`${obj.server}/readnotesadmin`);
@@ -12,7 +13,7 @@ const ReadNotesAdmin = () =>{
         setNotes(result);
         // console.log(result);
     }
-    readNews();
+   
 
     const deleteNoteAdmin =async (id)=>{
         let result = await fetch(`${obj.server}/deletenotesadmin/${id}`,{
@@ -20,6 +21,10 @@ const ReadNotesAdmin = () =>{
         });
         if(result){console.log("Deleted");}
     }
+
+useEffect(() => {
+    readNews()
+}, [])
 
     return(
         <div className='py-4 py-md-5'>

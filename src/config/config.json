@@ -2,8 +2,8 @@
     "local":{
         "server": "http://localhost:3001"
     },
-    "developement": {
-        "server": "https://dev.xyscom"
+    "development": {
+        "server": "https://note-share.onrender.com"
     },
     "staging": {
         "server": "http://localhost:3001"
