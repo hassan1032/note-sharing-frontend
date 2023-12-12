@@ -21,7 +21,12 @@ const Signup = () =>{
             }
         });
         result = await result.json();
-        console.log(result);
+        
+        if(result){
+            alert("Regsitered successfully")
+            console.log(result);
+        }
+        
     }
 
     return(
