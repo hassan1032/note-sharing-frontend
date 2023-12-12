@@ -14,20 +14,21 @@ const EditNotesUser = ()=>{
     let [content,setContent] = useState("");
     let addby = JSON.parse(localStorage.getItem('user'))._id;
     useEffect(()=>{
+        const getNotesAdmin =async ()=>{
+            let result = await fetch(`${obj.server}/getnotesadmin/${params.key}`);
+            result = await result.json();
+            setTopic(result.topic);
+            setSubtopic(result.subtopic);
+            setContent(result.content);
+            console.log(result);
+        }
         getNotesAdmin();
-    },[]);
+    },[params]);
 
-    const getNotesAdmin =async ()=>{
-        let result = await fetch(`${obj.server}/getnotesadmin/${params.key}`);
-        result = await result.json();
-        setTopic(result.topic);
-        setSubtopic(result.subtopic);
-        setContent(result.content);
-        console.log(result);
-    }
+  
 
     const updateNotesAdmin =async ()=>{
-        let result = await fetch(`http://localhost:4500/editnotesadmin/${params.key}`,{
+        let result = await fetch(`${obj.server}/editnotesadmin/${params.key}`,{
             method:'put',
             body: JSON.stringify({topic,subtopic,content,addby}),
             headers:{
