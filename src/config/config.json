@@ -1,0 +1,14 @@
+{
+    "local":{
+        "server": "http://localhost:3001"
+    },
+    "developement": {
+        "server": "https://dev.xyscom"
+    },
+    "staging": {
+        "server": "http://localhost:3001"
+    },
+    "production":{
+        "server": "http://localhost:3001"
+    }
+}

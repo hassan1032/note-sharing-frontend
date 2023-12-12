@@ -1,0 +1,38 @@
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0; padding: 0;
+}
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{font-family: 'Montserrat', sans-serif;}
+.header-main-div{
+    background-color: #111;
+    text-align: right;
+    padding: 16px 0;
+}
+.header-menu-items{
+    list-style: none;
+}
+.header-menu-items li{
+    display: inline;
+    font-size: 25px;
+    padding-left: 25px;
+}
+.header-menu-items li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+}
+.header-menu-items li.active a {
+    border-color: #fff;
+}
+
+.header-menu-items li:hover a {
+    border-color: #fff;
+}

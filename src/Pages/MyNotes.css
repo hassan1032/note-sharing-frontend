@@ -1,0 +1,92 @@
+
+
+.mynotes-base2{
+    background-color: rgb(227, 240, 252);
+    padding: 20px; border-radius: 16px;
+}
+.readnoteadmin-main{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    padding-right: 70px;    
+    border: 1px solid #000;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transition: all .3s ease-in;
+}
+.readnoteadmin-main:hover{
+    border-top-color: #000;
+    border-left-color: #000;
+}
+
+.readnoteadmin-index{
+    display: inline;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 14px;
+    top: 0px;
+}
+
+.readnoteadmin-heading{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 8px !important;
+    line-height: 26px;
+}
+
+.readnoteadmin-subheading{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(131 131 131);
+    margin-bottom: 0px;
+}
+
+.readnoteadmin-content{
+    color: black;
+    font-size: 16px;
+}
+
+.readnoteadmin-icon{
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.readnoteadmin-icon .readnote_del, .readnoteadmin-icon .readnote_edit {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    background-color: #fff;
+    line-height: 36px;
+    border-radius: 50%;
+    border: none;
+    color: #000000;
+    box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+    transition: all .3s ease-in;
+}
+
+.readnoteadmin-icon .readnote_del {
+    margin-top: 6px;
+}
+
+.readnoteadmin-icon .readnote_del:hover, .readnoteadmin-icon .readnote_edit:hover {
+    box-shadow: none;
+    color: #fff;
+    background-color: #000;
+}

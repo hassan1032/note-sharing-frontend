@@ -1,0 +1,12 @@
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+.footer-main-div{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0 5px;
+    font-size: 12px;
+}
